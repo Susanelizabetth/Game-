@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en,es" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/style.css" type="text/css">
+      <link rel="stylesheet" href="../css/busqueda.css" type="text/css">
+      <!-- ------------------------------Links de nav y foot------------------------------ -->
+      <link rel="stylesheet" href="../css/only-foot.css" type="text/css">
+      <link rel="stylesheet" href="../css/new-var-style.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <!-- ------------------------------SCRIPT DEL BOTON DE NOTIFICACIONES------------------------------ -->
+      <title>Game + | Busqueda Juegos</title>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         <script>
+            $(document).ready(function(){
+               $(".bell-not .btn").click(function(){
+                     $(this).parent().toggleClass("active");
+                     $(".nav-items").removeClass("active");
+               });
+            })    
+         </script>
+</head>
+<body>
+<!-- ----------------------------------------------------NAV---------------------------------------------- -->
+   <nav>    
+      <div class="logo">
+            <a href="PaginaPrincipal.html"><img src="../image/logo.png"></a>
+         </div>
+         <div class="nav-items">
+            <li><a href="PaginaPrincipal.html">Inicio</a></li>
+            <li><a href="Busqueda.html">Juegos</a></li>
+            <li><a href="AcercaProyecto.html">Conócenos</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
+            <li><a href="RegistroUsuario.html">Regístrate</a></li>
+            <li><a href="InicioSesion.html">Inicia Sesión</a></li>
+         </div>
+         <form >
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+         <div class="boton">
+            <button><a href="Perfil.html"><i class="fas fa-user"></i></a></button>
+            <div class="bell-not">
+                  <button class="btn"><i class="fas fa-bell"></i></button>
+                  <div class="not-content" id="desplegable">
+                     <div class="not-title content">
+                        <h2 class="not-margin color-white">Notificaciones</h2>
+                     </div>
+                     <div class="user-not">
+                        <span class="color-white">
+                              <i class="fas fa-user-circle"></i>
+                        </span>
+                        <div class="not-info">
+                              <h3 class="not-margin color-font">Juegos S.A</h3>
+                              <p class="not-margin font-large color-white"> Ha subido un juego</p>
+                              <p class="not-margin color-gray">hace 5 minutos</p>
+                        </div>
+                     </div>
+                     <div class="user-not">
+                        <span class="color-white">
+                              <i class="fab fa-playstation"></i>
+                        </span>
+                        <div class="not-info">
+                              <h3 class="not-margin color-font">Playstation</h3>
+                              <p class="not-margin font-large color-white"> Tu pedido ha sido confirmado</p>
+                              <p class="not-margin color-gray">hace 30 minutos</p>
+                        </div>
+                     </div>
+                     <div class="user-not">
+                        <span class="color-white">
+                              <i class="fab fa-xbox"></i>
+                        </span>
+                        <div class="not-info">
+                              <h3 class="not-margin color-font">Xbox</h3>
+                              <p class="not-margin font-large color-white">Tu pedido esta en proceso</p>
+                              <p class="not-margin color-gray">hace 45 minutos</p>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+            
+            <button><a href="cart-view.html"><i class="fas fa-cart-plus"></i></a></button>
+         </div>
+   </nav>
+<!-- --------------------------------------------------------TERMINA NAV-------------------------------------------------- -->
+      <!----------------------------SIDEBAR-------->
+
+      <div class="sidebar">
+         <a class="active1" href="">Juegos</a>
+         <a href="Busqueda.html">Populares</a>
+         <a class="active" href="BDisparos.html">Disparos</a>
+         <a href="BAventura.html">Aventura</a>
+         <a href="BSimula.html">Simuladores</a>
+      </div>
+
+      <!---BUSQUEDA---->
+
+   
+      <div class="container-b">
+         <h4 class="title">Juegos de Disparos</h4>
+         <div class="row-b">
+            <div class="col">
+               <a href="RevisionContenido.html"><img src="https://tecnogaming.com/wp-content/uploads/2013/04/GTA-V-portada.jpg" alt=""></a>
+               <h4>GTA V</h4>
+               <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <p>$.19.99</p>
+               <a href="cart-view.html"><button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewbox="0 0 16 16">
+                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+               </button></a>
+            </div>
+
+            <div class="col">
+               <a href="RevisionContenido.html"><img src="https://i.pinimg.com/originals/ee/3f/8e/ee3f8ed0c8288f4ccc3b24ccb64c1878.jpg" alt=""></a>
+               <h4>Red Dead Redemtion II</h4>
+               <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+               </div>
+               <p>$.44.99</p>
+               <a href="cart-view.html"><button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewbox="0 0 16 16">
+                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+               </button></a>
+            </div>
+
+            <div class="col">
+               <a href="RevisionContenido.html"><img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/02/cyberpunk-2077-portada-ficha-01-1877357.jpg?itok=QnLLgl2D" alt=""></a>
+               <h4>Cyberpunk 2077</h4>
+               <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+               </div>
+               <p>$.39.99</p>
+               <a href="cart-view.html"><button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+               </button></a>
+            </div>
+
+            <div class="col">
+               <a href="RevisionContenido.html"><img src="https://www.digiseller.ru/preview/907830/p1_3090020_6514d831.jpg" alt=""></a>
+               <h4>ARK Survival Evolved</h4>
+               <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+               </div>
+               <p>$.19.99</p>
+               <a href="cart-view.html"><button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+               </button></a>
+            </div>
+
+            <div class="col">
+               <a href="RevisionContenido.html"><img src="https://i.pinimg.com/originals/d7/0e/09/d70e0910d215c2c2fbc05181ae3b31ba.jpg" alt=""></a>
+               <h4>Metro Exodus</h4>
+               <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+               </div>
+               <p>$.19.99</p>
+               <a href="cart-view.html"><button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+               </button></a>
+            </div>
+            
+            <div class="col">
+               <a href="RevisionContenido.html"><img src="https://i.pinimg.com/originals/a8/e4/78/a8e478b7855fd1006e7bc4a4714a063a.jpg" alt=""></a>
+               <h4>Days Gone</h4>
+               <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+               </div>
+               <p>$.30.00</p>
+               <a href="cart-view.html"><button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewbox="0 0 16 16">
+                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+               </button></a>
+            </div>
+
+
+         </div>
+      </div>
+   
+      <!----------FOOTER---------- -->
+      <div class="footer">
+         <div class="container-footer">
+            <div class="row">
+               <div class="footer-col-1">
+                  <h3>Proyecto #1 Programación de Software 2</h3>
+                  <p>Pofesor: Juan Antonio Zamora</p>
+                  <div class="app-logo">
+                     <img src="../image/fisc.png">
+                     <img src="../image/utp.png">
+                  </div>
+               </div>
+               <div class="footer-col-2">
+                  <img src="../image/logo.png">
+                  <p>SEM 1 2021</p>
+               </div>
+               <div class="footer-col-3">
+                  <h3>Integrantes</h3>
+                  <ul>
+                     <li>Castillo, Susana</li>
+                     <li>Martínez, Raúl</li>
+                     <li>Miranda, Fabio</li>
+                     <li>Espino, Louis</li>
+                     <li>Rodríguez, Roger</li>
+
+                  </ul>
+               </div>
+               <div class="footer-col-4">
+                  <h3>Cédula</h3>
+                  <ul>
+                     <li>8-968-509</li>
+                     <li>8-909-2049</li>
+                     <li>8-959-20</li>
+                     <li>8-945-1231</li>
+                     <li>8-958-1553</li>
+                  </ul>
+               </div>
+            
+            </div>
+         </div>
+      </div>
+      
+   </body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ProductoDetalles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- ------------------------------Links de nav y foot------------------------------ -->
+      <link rel="stylesheet" href="../css/only-foot.css" type="text/css">
+      <link rel="stylesheet" href="../css/new-var-style.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <title>Game+</title>
+      <!-- ------------------------------SCRIPT DEL BOTON DE NOTIFICACIONES------------------------------ -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+          $(document).ready(function(){
+              $(".bell-not .btn").click(function(){
+                  $(this).parent().toggleClass("active");
+                  $(".nav-items").removeClass("active");
+              });
+          })
+              
+      </script>
+    <link rel="stylesheet" href="../css/ProductDetails.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+  
+  </head>
+  <body>
+      <!------------------------------------------------------NAV------------------------------------------------>
+      <nav>    
+        <div class="logo">
+            <a href="PaginaPrincipal.html"><img src="../image/logo.png"></a>
+        </div>
+        <div class="nav-items">
+            <li><a href="PaginaPrincipal.html">Inicio</a></li>
+            <li><a href="Busqueda.html">Juegos</a></li>
+            <li><a href="AcercaProyecto.html">Conócenos</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
+            <li><a href="RegistroUsuario.html">Regístrate</a></li>
+            <li><a href="InicioSesion.html">Inicia Sesión</a></li>
+        </div>
+        <form >
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+        <div class="boton">
+            <button><a href="Perfil.html"><i class="fas fa-user"></i></a></button>
+            <div class="bell-not">
+                <button class="btn"><i class="fas fa-bell"></i></button>
+                <div class="not-content" id="desplegable">
+                    <div class="not-title content">
+                        <h2 class="not-margin color-white">Notificaciones</h2>
+                    </div>
+                    <div class="user-not">
+                        <span class="color-white">
+                            <i class="fas fa-user-circle"></i>
+                        </span>
+                        <div class="not-info">
+                            <h3 class="not-margin color-font">Juegos S.A</h3>
+                            <p class="not-margin font-large color-white"> Ha subido un juego</p>
+                            <p class="not-margin color-gray">hace 5 minutos</p>
+                        </div>
+                    </div>
+                    <div class="user-not">
+                        <span class="color-white">
+                            <i class="fab fa-playstation"></i>
+                        </span>
+                        <div class="not-info">
+                            <h3 class="not-margin color-font">Playstation</h3>
+                            <p class="not-margin font-large color-white"> Tu pedido ha sido confirmado</p>
+                            <p class="not-margin color-gray">hace 30 minutos</p>
+                        </div>
+                    </div>
+                    <div class="user-not">
+                        <span class="color-white">
+                            <i class="fab fa-xbox"></i>
+                        </span>
+                        <div class="not-info">
+                            <h3 class="not-margin color-font">Xbox</h3>
+                            <p class="not-margin font-large color-white">Tu pedido esta en proceso</p>
+                            <p class="not-margin color-gray">hace 45 minutos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button><a href="cart-view.html"><i class="fas fa-cart-plus"></i></a></button>
+        </div>
+    </nav>
+<!-- --------------------------------------------------------TERMINA NAV-------------------------------------------------- -->
+    <div class="card-wrapper">
+      <div class="card">
+        <!-- detalles.left -->
+        <div class="product-imgs">
+          <div class="img-display">
+            <div class="img-showcase">
+              <img id="img-pd" src="https://images-na.ssl-images-amazon.com/images/I/8155bxmZcpL._SL1500_.jpg" alt="DAYS_GONE_COVER">
+              <img id="img-pd" src="https://www.digitaltoo.com/wp-content/uploads/sites/3/2020/07/Rocket-League-1.jpg" alt="DAYS_GONE_P1 ">
+              <img id="img-pd" src="https://www.hebergementwebs.com/image/4d/4de650e4f88f9bc9c9696a5297eb8114.jpg/el-desarrollador-de-rocket-league-dice-que-120-fps-es-un-parche-menor-en-la-serie-xbox-pero-un-puerto-nativo-completo-en-ps5.jpg" alt="DAYS_GONE_P2">
+              <img id="img-pd" src="https://cdn.cdkeys.com/700x700/media/catalog/product/r/o/rocket-league_pc_1.jpg" alt="DAYS_GONE_P3">
+            </div>
+          </div>
+          <div class = "img-select">
+            <div class = "img-item">
+              <a href = "#" data-id = "1">
+                <img id="img-pd" src="https://images-na.ssl-images-amazon.com/images/I/8155bxmZcpL._SL1500_.jpg" alt="DAYS_GONE_P1">-
+              </a>
+            </div>
+            <div class ="img-item">
+              <a href="#" data-id="2">
+                <img id="img-pd" src="https://www.digitaltoo.com/wp-content/uploads/sites/3/2020/07/Rocket-League-1.jpg" alt= "DAYS_GONE_P2">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img id="img-pd"src = "https://www.hebergementwebs.com/image/4d/4de650e4f88f9bc9c9696a5297eb8114.jpg/el-desarrollador-de-rocket-league-dice-que-120-fps-es-un-parche-menor-en-la-serie-xbox-pero-un-puerto-nativo-completo-en-ps5.jpg" alt= "DAYS_GONE_P3">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "4">
+                <img id="img-pd" src="https://cdn.cdkeys.com/700x700/media/catalog/product/r/o/rocket-league_pc_1.jpg" alt="DAYS_GONE_P3.5">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- detalles.right -->
+        <div class = "product-content">
+          <h2 class = "product-title">Rocket League</h2>
+          <a href = "https://www.xbox.com/es-ES" class = "product-link">Visita Xbox.com</a>
+          <h4  class ="developer">Desarollador: Bend Studio</h4>
+          <br>
+          <h5 class="publisher">Publicador: SIE (Sony Interactive Entretainment)</h5>
+          <div class = "product-rating">
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star"></i>
+            <i class = "fas fa-star-half-alt"></i>
+            <span>4.7(2888)</span>
+          </div>
+
+          <div class = "product-price">
+            <p class = "last-price">Precio: <span> $57.00</span></p>
+            <p class = "new-price">Nuevo Precio: <span> FREE (100%)</span></p>
+          </div>
+
+          <div class = "product-detail">
+            <h2>Acerca del Juego: </h2>
+            <p id= "focus_points">Enfréntate a los desafíos impredecibles de un mundo abierto postapocalíptico ambientado el Pacífico Noroeste.</p>
+            <p> ¿Tienes la habilidad -y el valor- para sobrevivir a los horrores de un mundo roto en esta aventura de acción de enorme mundo abierto?
+                Ponte en los zapatos sucios y salpicados del antiguo motero forajido Deacon St. John, 
+                un cazarrecompensas que busca una razón para vivir en una tierra rodeada de muerte. 
+            </p>
+            
+            <ul>
+              <li>Plataforma: <span>PS4, PS5, STEAM(Digital)</span></li>
+              <li>Disponibilidad: <span>En stock</span></li>
+              <li>Categoria(s): <span>Acción, Aventura, Shooters</span></li>
+              <li>Envio: <span>¡Enviamos a Panama!</span></li>
+            </ul>
+          </div>
+          <!--Detalles de compra.bottom-->
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1">
+            <a href="cart-view.html"><button type = "button" class = "btn">
+              Añadir al carrito<i class = "fas fa-shopping-cart"></i>
+            </button></a>
+            <button type = "button" class = "btn">Comparar</button>
+          </div>
+
+          <div class = "social-links">
+            <p>Compartir: </p>
+            <a href = "#">
+              <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-instagram"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-whatsapp"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+<script>
+      const imgs = document.querySelectorAll('.img-select a');
+        const imgBtns = [...imgs];
+        let imgId = 1;
+        
+        imgBtns.forEach((imgItem) => {
+            imgItem.addEventListener('click', (event) => {
+                event.preventDefault();
+                imgId = imgItem.dataset.id;
+                slideImage();
+            });
+        });
+        
+        function slideImage(){
+            const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+        
+            document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+        }
+        
+        window.addEventListener('resize', slideImage);
+ 
+  
+</script>
+    <!-----------------FOOTER---------------------->
+
+<div class="footer">
+  <div class="container-footer">
+    <div class="row">
+        <div class="footer-col-1">
+          <h3>Proyecto #1 Programación de Software 2</h3>
+          <p>Pofesor: Juan Antonio Zamora</p>
+          <div class="app-logo">
+              <img src="../image/fisc.png">
+              <img src="../image/utp.png">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="../image/logo.png">
+          <p>SEM 1 2021</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Integrantes</h3>
+          <ul>
+              <li>Castillo, Susana</li>
+              <li>Martínez, Raúl</li>
+              <li>Miranda, Fabio</li>
+              <li>Espino, Louis</li>
+              <li>Rodríguez, Roger</li>
+
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Cédula</h3>
+          <ul>
+              <li>8-968-509</li>
+              <li>8-909-2049</li>
+              <li>8-959-20</li>
+              <li>8-945-1231</li>
+              <li>8-958-1553</li>
+          </ul>
+        </div>  
+    </div>
+  </div>
+</div>
+
+<!--TERMINA FOOTER-->
+</body>
+</html>

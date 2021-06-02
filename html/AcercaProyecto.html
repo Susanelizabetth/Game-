@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="StyleSheet" href="../css/EstiloContacto.css">
+    <link rel="StyleSheet" href="../css/personacss.css">
+    <!-- ------------------------------Links de nav y foot------------------------------ -->
+    <link rel="stylesheet" href="../css/only-foot.css" type="text/css">
+    <link rel="stylesheet" href="../css/new-var-style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- ------------------------------SCRIPT DEL BOTON DE NOTIFICACIONES------------------------------ -->
+    <title>Sobre El Proyecto</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".bell-not .btn").click(function(){
+                $(this).parent().toggleClass("active");
+                $(".nav-items").removeClass("active");
+            });
+        })    
+    </script>
+</head>
+<body >
+    <!-- ----------------------------------------------------NAV---------------------------------------------- -->
+    <nav>    
+        <div class="logo">
+                <a href="PaginaPrincipal.html"><img src="../image/logo.png"></a>
+            </div>
+            <div class="nav-items">
+                <li><a href="PaginaPrincipal.html">Inicio</a></li>
+                <li><a href="Busqueda.html">Juegos</a></li>
+                <li><a href="AcercaProyecto.html">Conócenos</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+                <li><a href="RegistroUsuario.html">Regístrate</a></li>
+                <li><a href="InicioSesion.html">Inicia Sesión</a></li>
+            </div>
+            <form >
+                <input type="search" class="search-data" placeholder="Search" required>
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+            <div class="boton">
+                <button><a href="Perfil.html"><i class="fas fa-user"></i></a></button>
+                <div class="bell-not">
+                    <button class="btn"><i class="fas fa-bell"></i></button>
+                    <div class="not-content" id="desplegable">
+                        <div class="not-title content">
+                            <h2 class="not-margin color-white">Notificaciones</h2>
+                        </div>
+                        <div class="user-not">
+                            <span class="color-white">
+                                <i class="fas fa-user-circle"></i>
+                            </span>
+                            <div class="not-info">
+                                <h3 class="not-margin color-font">Juegos S.A</h3>
+                                <p class="not-margin font-large color-white"> Ha subido un juego</p>
+                                <p class="not-margin color-gray">hace 5 minutos</p>
+                            </div>
+                        </div>
+                        <div class="user-not">
+                            <span class="color-white">
+                                <i class="fab fa-playstation"></i>
+                            </span>
+                            <div class="not-info">
+                                <h3 class="not-margin color-font">Playstation</h3>
+                                <p class="not-margin font-large color-white"> Tu pedido ha sido confirmado</p>
+                                <p class="not-margin color-gray">hace 30 minutos</p>
+                            </div>
+                        </div>
+                        <div class="user-not">
+                            <span class="color-white">
+                                <i class="fab fa-xbox"></i>
+                            </span>
+                            <div class="not-info">
+                                <h3 class="not-margin color-font">Xbox</h3>
+                                <p class="not-margin font-large color-white">Tu pedido esta en proceso</p>
+                                <p class="not-margin color-gray">hace 45 minutos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button><a href="cart-view.html"><i class="fas fa-cart-plus"></i></a></button>
+            </div>
+    </nav>
+
+    <!-- --------------------------------------------------------TERMINA NAV-------------------------------------------------- -->
+
+    <div class="Margen">
+        <br><br>
+        <h1>Tienda Super Gamer Para Gamers</h1>
+        <br>
+        <h2>¿Quienes Somos? </h2>
+        <div class="Parrafo">
+        <p >Somos un grupo de estudiantes de la FISC, teniamos en mente un sitio web de venta de videojuegos sencilla de utilizar sin tantos rodeos, paginas como STEAM o Epic poseen tanttas opciones y categorias que </p>
+        <p >Lorem ipsum dolor sit amet consectetur adipiscing elit eget sodales luctus aliquam, aptent feugiat faucibus cursus blandit ornare euismod non dignissim. Class eu diam netus ultrices bibendum velit ornare feugiat dictum quam ultricies, odio tristique torquent hac faucibus pharetra habitasse elementum nulla per cum, morbi taciti leo iaculis lacinia quisque augue nullam nibh semper. Luctus lobortis dignissim pharetra consequat nascetur a aliquet pellentesque, euismod molestie mus suscipit nullam ornare ridiculus, porta hendrerit pretium nostra etiam dictumst arcu.</p>
+        
+        <p >Eu convallis magnis gravida mauris venenatis vitae enim cursus, morbi habitant maecenas blandit erat ridiculus tincidunt, dictum sociosqu cubilia felis conubia magna tempor. Volutpat ante nisl pretium fermentum metus netus fusce dis congue in auctor, enim placerat leo semper euismod fringilla porta rutrum fames. Faucibus aenean laoreet iaculis tempor facilisi placerat eleifend aliquet dapibus, sodales nascetur vel taciti nibh tristique erat ante, velit nullam sociosqu imperdiet curabitur dui mollis orci.</p>
+        </div>
+        <br><br>
+        <h2>Trayectoria </h2>
+        <div class="Parrafo">
+        <p >Lorem ipsum dolor sit amet consectetur adipiscing elit eget sodales luctus aliquam, aptent feugiat faucibus cursus blandit ornare euismod non dignissim. Class eu diam netus ultrices bibendum velit ornare feugiat dictum quam ultricies, odio tristique torquent hac faucibus pharetra habitasse elementum nulla per cum, morbi taciti leo iaculis lacinia quisque augue nullam nibh semper. Luctus lobortis dignissim pharetra consequat nascetur a aliquet pellentesque, euismod molestie mus suscipit nullam ornare ridiculus, porta hendrerit pretium nostra etiam dictumst arcu.</p>
+        <p >Lorem ipsum dolor sit amet consectetur adipiscing elit eget sodales luctus aliquam, aptent feugiat faucibus cursus blandit ornare euismod non dignissim. Class eu diam netus ultrices bibendum velit ornare feugiat dictum quam ultricies, odio tristique torquent hac faucibus pharetra habitasse elementum nulla per cum, morbi taciti leo iaculis lacinia quisque augue nullam nibh semper. Luctus lobortis dignissim pharetra consequat nascetur a aliquet pellentesque, euismod molestie mus suscipit nullam ornare ridiculus, porta hendrerit pretium nostra etiam dictumst arcu.</p>
+        
+        <p >Eu convallis magnis gravida mauris venenatis vitae enim cursus, morbi habitant maecenas blandit erat ridiculus tincidunt, dictum sociosqu cubilia felis conubia magna tempor. Volutpat ante nisl pretium fermentum metus netus fusce dis congue in auctor, enim placerat leo semper euismod fringilla porta rutrum fames. Faucibus aenean laoreet iaculis tempor facilisi placerat eleifend aliquet dapibus, sodales nascetur vel taciti nibh tristique erat ante, velit nullam sociosqu imperdiet curabitur dui mollis orci.</p>
+        </div>
+      
+       
+        <br><br>
+    
+        <h2>Historia </h2>
+        <div class="Parrafo">
+        <p >Lorem ipsum dolor sit amet consectetur adipiscing elit eget sodales luctus aliquam, aptent feugiat faucibus cursus blandit ornare euismod non dignissim. Class eu diam netus ultrices bibendum velit ornare feugiat dictum quam ultricies, odio tristique torquent hac faucibus pharetra habitasse elementum nulla per cum, morbi taciti leo iaculis lacinia quisque augue nullam nibh semper. Luctus lobortis dignissim pharetra consequat nascetur a aliquet pellentesque, euismod molestie mus suscipit nullam ornare ridiculus, porta hendrerit pretium nostra etiam dictumst arcu.</p>
+        <p >Lorem ipsum dolor sit amet consectetur adipiscing elit eget sodales luctus aliquam, aptent feugiat faucibus cursus blandit ornare euismod non dignissim. Class eu diam netus ultrices bibendum velit ornare feugiat dictum quam ultricies, odio tristique torquent hac faucibus pharetra habitasse elementum nulla per cum, morbi taciti leo iaculis lacinia quisque augue nullam nibh semper. Luctus lobortis dignissim pharetra consequat nascetur a aliquet pellentesque, euismod molestie mus suscipit nullam ornare ridiculus, porta hendrerit pretium nostra etiam dictumst arcu.</p>
+        <p >Eu convallis magnis gravida mauris venenatis vitae enim cursus, morbi habitant maecenas blandit erat ridiculus tincidunt, dictum sociosqu cubilia felis conubia magna tempor. Volutpat ante nisl pretium fermentum metus netus fusce dis congue in auctor, enim placerat leo semper euismod fringilla porta rutrum fames. Faucibus aenean laoreet iaculis tempor facilisi placerat eleifend aliquet dapibus, sodales nascetur vel taciti nibh tristique erat ante, velit nullam sociosqu imperdiet curabitur dui mollis orci.</p>
+        <p >Lorem ipsum dolor sit amet consectetur adipiscing elit eget sodales luctus aliquam, aptent feugiat faucibus cursus blandit ornare euismod non dignissim. Class eu diam netus ultrices bibendum velit ornare feugiat dictum quam ultricies, odio tristique torquent hac faucibus pharetra habitasse elementum nulla per cum, morbi taciti leo iaculis lacinia quisque augue nullam nibh semper. Luctus lobortis dignissim pharetra consequat nascetur a aliquet pellentesque, euismod molestie mus suscipit nullam ornare ridiculus, porta hendrerit pretium nostra etiam dictumst arcu.</p>
+       
+    </div>
+    <br><br>
+        <h1><center>Colaboradores</center></h1>
+    </div>
+    <div class="Personadiv">
+        <div class="person">
+            <div class="container">
+            <div class="container-inner">
+                <img class="circle" src="../image/Raul.png"/>
+            </div>
+            </div>
+            <div class="divider"></div>
+            <div class="name">Raúl</div>
+            <div class="title">Ing. De Software</div>
+        </div>
+        <div class="person">
+            <div class="container">
+            <div class="container-inner">
+                <img class="circle" src="../image/Fabio.png"/>
+            </div>
+            </div>
+            <div class="divider"></div>
+            <div class="name">Fabio</div>
+            <div class="title">Ing. De Software</div>
+        </div>
+        <div class="person">
+            <div class="container">
+            <div class="container-inner">
+                <img class="circle" src="../image/Susana.png"/>
+            </div>
+            </div>
+            <div class="divider"></div>
+            <div class="name">Susana</div>
+            <div class="title">Ing. De Software</div>
+        </div>
+        <div class="person">
+            <div class="container">
+            <div class="container-inner">
+                <img class="circle" src="../image/LE.png"/>
+            </div>
+            </div>
+            <div class="divider"></div>
+            <div class="name">Louis</div>
+            <div class="title">Ing. De Software</div>
+        </div>
+        <div class="person">
+            <div class="container">
+            <div class="container-inner">
+                <img class="circle" src="../image/Roger.png"/>
+            </div>
+            </div>
+            <div class="divider"></div>
+            <div class="name">Roger</div>
+            <div class="title">Ing. De Software</div>
+        </div>
+    </div>
+<!-----------------FOOTER---------------------->
+
+<div class="footer">
+    <div class="container-footer">
+       <div class="row">
+          <div class="footer-col-1">
+             <h3>Proyecto #1 Programación de Software 2</h3>
+             <p>Pofesor: Juan Antonio Zamora</p>
+             <div class="app-logo">
+                 <img src="../image/fisc.png">
+                 <img src="../image/utp.png">
+             </div>
+         </div>
+         <div class="footer-col-2">
+             <img src="../image/logo.png">
+             <p>SEM 1 2021</p>
+         </div>
+         <div class="footer-col-3">
+             <h3>Integrantes</h3>
+             <ul>
+                 <li>Castillo, Susana</li>
+                 <li>Martínez, Raúl</li>
+                 <li>Miranda, Fabio</li>
+                 <li>Espino, Louis</li>
+                 <li>Rodríguez, Roger</li>
+
+             </ul>
+         </div>
+         <div class="footer-col-4">
+             <h3>Cédula</h3>
+             <ul>
+                 <li>8-968-509</li>
+                 <li>8-909-2049</li>
+                 <li>8-959-20</li>
+                 <li>8-945-1231</li>
+                 <li>8-958-1553</li>
+             </ul>
+         </div>  
+       </div>
+    </div>
+ </div>
+
+ <!--TERMINA FOOTER-->
+</body>
+</html>
